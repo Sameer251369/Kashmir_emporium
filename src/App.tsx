@@ -1,20 +1,31 @@
-import { Button } from "@/components/ui/button"
+import { TooltipProvider } from "@/components/ui/tooltip"
+import { Header } from "@/components/layout/Header"
+import { Hero } from "@/components/sections/Hero"
+import { Heritage } from "@/components/sections/Heritage"
+import { Collections } from "@/components/sections/Collections"
+import { Carpets } from "@/components/sections/Carpets"
+import { Gallery } from "@/components/sections/Gallery"
+import { Craft } from "@/components/sections/Craft"
+import { Testimonials } from "@/components/sections/Testimonials"
+import { Enquiry } from "@/components/sections/Enquiry"
+import { Footer } from "@/components/sections/Footer"
 
 export function App() {
   return (
-    <div className="flex min-h-svh p-6">
-      <div className="flex max-w-md min-w-0 flex-col gap-4 text-sm leading-loose">
-        <div>
-          <h1 className="font-medium">Project ready!</h1>
-          <p>You may now add components and start building.</p>
-          <p>We&apos;ve already added the button component for you.</p>
-          <Button className="mt-2">Button</Button>
-        </div>
-        <div className="font-mono text-xs text-muted-foreground">
-          (Press <kbd>d</kbd> to toggle dark mode)
-        </div>
+    <TooltipProvider>
+      <div className="min-h-svh overflow-x-hidden">
+        <Header />
+        <Hero />
+        <Heritage />
+        <Collections />
+        <Carpets />
+        <Gallery />
+        <Craft />
+        <Testimonials />
+        <Enquiry />
+        <Footer />
       </div>
-    </div>
+    </TooltipProvider>
   )
 }
 
