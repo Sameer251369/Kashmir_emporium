@@ -60,7 +60,7 @@ export function Header() {
           <SheetContent side="left" className="w-[min(88vw,20rem)] bg-background">
             <SheetHeader>
               <SheetTitle className="flex items-center gap-3 text-left">
-                <BrandSeal size={36} className="text-gold" />
+                <BrandSeal size={64} className="text-gold" />
                 <span className="font-display text-lg">Kashmir Emporium</span>
               </SheetTitle>
             </SheetHeader>
@@ -103,12 +103,9 @@ export function Header() {
           className="group flex items-center gap-3 lg:absolute lg:left-1/2 lg:-translate-x-1/2"
         >
           <BrandSeal
-            size={44}
+            size={78}
             className="text-foreground/85 transition-all duration-700 group-hover:rotate-[20deg] group-hover:text-gold"
           />
-          <span className="flex flex-col leading-none lg:hidden">
-            <span className="font-display text-base">Kashmir Emporium</span>
-          </span>
         </a>
 
         {/* right — actions */}

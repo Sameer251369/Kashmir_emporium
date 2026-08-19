@@ -16,7 +16,7 @@ export function Footer() {
           {/* Brand + tagline */}
           <Reveal direction="left" className="sm:col-span-2 lg:col-span-1">
             <div className="flex items-center gap-3">
-              <BrandSeal size={40} className="text-gold" />
+              <BrandSeal size={50} className="text-gold" />
               <div>
                 <div className="font-display text-base font-semibold text-foreground">
                   {BUSINESS.name}

@@ -30,55 +30,45 @@ export type Collection = {
 
 export const COLLECTIONS: Collection[] = [
   {
-    title: "Pure Pashmina Shawls",
+    title: "Plain Stoles & Shawls",
     description:
-      "Hand-spun Changthangi cashmere, woven on wooden looms and finished with a soft, weightless drape.",
-    image: "/shawls/shawl-02.jpeg",
-    imageAlt: "Plain hand-made pashmina shawl with embroidered border, Kashmir Emporium showroom",
-    whatsappMessage: WA_MESSAGES.collection("pure pashmina shawls"),
+      "Soft, versatile stoles and shawls in refined plain weaves, selected for an effortless everyday drape.",
+    image: "/products/plain-stole-shawl.jpeg",
+    imageAlt: "Plain cream shawl with an embroidered orange border",
+    whatsappMessage: WA_MESSAGES.collection("plain stoles and shawls"),
   },
   {
-    title: "Kani Jamawar",
+    title: "Sozni Embroidered Shawls",
     description:
-      "Woven thread by thread with wooden kani spools — a single shawl can take an artisan over a year.",
+      "Machine and hand-made shawls with intricate sozni-inspired embroidery, from quiet borders to detailed motifs.",
+    image: "/shawls/shawl-11.jpeg",
+    imageAlt: "Sozni embroidered navy pashmina shawl",
+    whatsappMessage: WA_MESSAGES.collection("sozni embroidered shawls"),
+  },
+  {
+    title: "Machine & Hand-Made Shawls",
+    description:
+      "Richly patterned shawls that bring together dependable machine finishing and the character of hand embroidery.",
+    image: "/products/machine-handmade-shawl.jpeg",
+    imageAlt: "Dark blue and maroon shawl with an embroidered paisley border",
+    whatsappMessage: WA_MESSAGES.collection("machine and hand-made shawls"),
+  },
+  {
+    title: "Kani Jamawar Shawls",
+    description:
+      "Woven thread by thread with traditional kani spools, creating the dense, storied patterns of a Kashmir jamawar.",
     image: "/shawls/shawl-07.jpeg",
-    imageAlt: "Kani jamawar shawl with dense woven paisley motifs draped on a stand",
+    imageAlt: "Kani jamawar shawl with dense woven paisley motifs",
     whatsappMessage: WA_MESSAGES.collection("kani jamawar shawls"),
   },
   {
-    title: "Sozni Hand Embroidery",
+    title: "Kashmir Silk Carpets",
     description:
-      "Needle-fine sozni work in floral and paisley jaals, embroidered entirely by hand in Srinagar.",
-    image: "/shawls/shawl-11.jpeg",
-    imageAlt: "Navy pashmina shawl covered in fine sozni hand embroidery",
-    whatsappMessage: WA_MESSAGES.collection("sozni hand-embroidered shawls"),
-  },
-  {
-    title: "Hand-Knotted Silk Carpets",
-    description:
-      "Museum-grade silk-on-silk carpets, knotted on vertical looms with 400–900 knots per square inch.",
+      "Hand-made, hand-knotted Kashmir silk carpets crafted on vertical looms with lasting detail and depth.",
     image:
-      "https://images.unsplash.com/photo-1588421874990-1fe162747f9b?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTAwNDR8MHwxfHNlYXJjaHwxfHxoYW5kJTIwa25vdHRlZCUyMG9yaWVudGFsJTIwc2lsayUyMGNhcnBldCUyMHdpdGglMjBpbnRyaWNhdGUlMjBmbG9yYWwlMjBtZWRhbGxpb24lMjBwYXR0ZXJuJTIwZGFyayUyMG1vb2R5JTIwbGlnaHRpbmd8ZW58MHx8fHwxNzg2OTg4ODIwfDA&ixlib=rb-4.1.0&q=85&w=1200",
-    imageAlt:
-      "Hand-knotted oriental silk carpet with floral medallion pattern, photo by Ashkan Forouzani on Unsplash",
+      "https://images.unsplash.com/photo-1588421874990-1fe162747f9b?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTAwNDR8MHwxfHNlYXJjaHwxfHxoYW5kJTIwa25vdHRlZCUyMG9yaWVudGFsJTIwc2lsayUyMGNhcnBldCUyMHdpdGglMjBmbG9yYWwlMjBtZWRhbGxpb24lMjBwYXR0ZXJuJTIwZGFyayUyMG1vb2R5JTIwbGlnaHRpbmd8ZW58MHx8fHwxNzg2OTg4ODIwfDA&ixlib=rb-4.1.0&q=85&w=1200",
+    imageAlt: "Hand-knotted oriental silk carpet with floral medallion pattern",
     whatsappMessage: WA_MESSAGES.carpets,
-  },
-  {
-    title: "Rugs, Namda & Gabba",
-    description:
-      "Felted namda and chain-stitch gabba rugs in bold Kashmiri folk motifs, made for floors that get used.",
-    image:
-      "https://images.unsplash.com/photo-1693332559291-380f10cd2253?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTAwNDR8MHwxfHNlYXJjaHwxfHxwZXJzaWFuJTIwa2FzaG1pcmklMjBydWclMjBkZXRhaWwlMjB0ZXh0dXJlJTIwcmljaCUyMHJlZCUyMGFuZCUyMGdvbGQlMjBwYXR0ZXJuJTIwdG9wJTIwdmlld3xlbnwwfHx8fDE3ODY5ODg4Mjd8MA&ixlib=rb-4.1.0&q=85&w=1200",
-    imageAlt: "Red Kashmiri rug with dense geometric pattern, photo by SAJAD FI on Unsplash",
-    whatsappMessage: WA_MESSAGES.collection("Kashmiri rugs, namda and gabba"),
-  },
-  {
-    title: "Stoles & Scarves",
-    description:
-      "Lighter everyday pieces in cashmere, silk blends and fine wool — the easiest first purchase.",
-    image: "/shawls/shawl-06.jpeg",
-    imageAlt: "Flat lay of plain pashmina stoles in mustard, maroon, indigo and natural shades",
-    whatsappMessage: WA_MESSAGES.collection("stoles and scarves"),
   },
 ];
 
