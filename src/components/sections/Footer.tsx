@@ -64,13 +64,20 @@ export function Footer() {
                 <Phone className="mt-0.5 size-3.5 shrink-0" aria-hidden="true" />
                 <span>{BUSINESS.phoneDisplay}</span>
               </a>
-              <div className="flex items-start gap-2 text-sm text-foreground/70">
+              <a
+                href={BUSINESS.mapUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-start gap-2 text-sm text-foreground/70 transition-colors hover:text-gold"
+                aria-label="Open Kashmir Emporium in Google Maps"
+              >
                 <MapPin className="mt-0.5 size-3.5 shrink-0" aria-hidden="true" />
-                <div>
+                <div className="leading-relaxed">
                   <div>{BUSINESS.city}</div>
                   <div className="text-xs">{BUSINESS.region}</div>
+                  <div className="mt-1 max-w-[16rem] text-xs">{BUSINESS.address}</div>
                 </div>
-              </div>
+              </a>
               <div className="flex items-start gap-2 text-sm text-foreground/70">
                 <Mail className="mt-0.5 size-3.5 shrink-0" aria-hidden="true" />
                 <span className="text-xs">{BUSINESS.responseTime}</span>

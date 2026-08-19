@@ -4,8 +4,12 @@ export const BUSINESS = {
   phoneDisplay: "+91 88841 72713",
   phoneE164: "+918884172713",
   whatsappNumber: "918884172713",
-  city: "Srinagar",
-  region: "Kashmir, India",
+  city: "MG Road, Bengaluru",
+  region: "Karnataka, India",
+  address:
+    "Building No. 46, 1st Floor, Kashmir Emporium, No. 102, Mahatma Gandhi Rd, next to Cauvery Emporium, Shanthala Nagar, Ashok Nagar, Bengaluru, Karnataka 560001",
+  mapUrl:
+    "https://www.google.com/maps/search/?api=1&query=Kashmir%20Emporium%2C%20No.%20102%2C%20Mahatma%20Gandhi%20Rd%2C%20Bengaluru%2C%20Karnataka%20560001",
   responseTime: "Usually within a few hours",
   tagline: "Handwoven pashmina, kani jamawar and hand-knotted carpets from Srinagar.",
 } as const;

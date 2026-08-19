@@ -58,7 +58,7 @@ export function Hero() {
         className="shell relative pt-32 pb-16 md:pb-24"
       >
         <Reveal delay={0.1}>
-          <CapsLabel className="text-gold">Srinagar · Kashmir</CapsLabel>
+          <CapsLabel className="text-gold">MG Road, Bengaluru</CapsLabel>
         </Reveal>
 
         <h1 className="display-hero mt-6 max-w-[22ch] text-balance">
@@ -100,7 +100,7 @@ export function Hero() {
         </Reveal>
 
         {/* footer rail */}
-        <div className="mt-16 flex items-end justify-between gap-6 md:mt-20">
+        <div className="mt-16 flex flex-col items-center gap-3 md:mt-20 md:flex-row md:items-end md:justify-between">
           <div className="hidden flex-col items-center gap-3 md:flex">
             <CapsLabel className="text-[0.625rem] text-foreground/60">Scroll</CapsLabel>
             <span
@@ -109,12 +109,12 @@ export function Hero() {
             />
           </div>
 
-          <div className="text-right">
-            <CapsLabel className="block border-t border-gold/50 pt-2 text-foreground/80">
+          <div className="w-full text-center md:w-auto md:text-right">
+            <CapsLabel className="inline-block border-t border-gold/50 pt-2 text-foreground/80">
               {BUSINESS.name}
             </CapsLabel>
             <CapsLabel className="mt-2 block text-[0.625rem] text-foreground/50">
-              Est. Srinagar · Three Generations
+              Est. Bengaluru · Three Generations
             </CapsLabel>
           </div>
         </div>
