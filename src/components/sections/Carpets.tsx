@@ -6,10 +6,41 @@ import { Reveal } from "@/components/common/Reveal";
 import { CapsLabel, Eyebrow, Italic, SectionHeading } from "@/components/common/typography";
 import { WhatsAppCta } from "@/components/common/WhatsAppCta";
 import { CARPET_SPECS } from "@/data/site";
-import { BUSINESS, WA_MESSAGES } from "@/lib/whatsapp";
+import { BUSINESS, WA_MESSAGES, whatsappUrl } from "@/lib/whatsapp";
 
 const CARPET_IMAGE =
   "https://images.unsplash.com/photo-1634442747349-3a969d4432df?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTAwNDR8MHwxfHNlYXJjaHwxfHxoYW5kJTIwa25vdHRlZCUyMG9yaWVudGFsJTIwc2lsayUyMGNhcnBldCUyMHdpdGglMjBpbnRyaWNhdGUlMjBmbG9yYWwlMjBtZWRhbGxpb24lMjBwYXR0ZXJuJTIwZGFyayUyMG1vb2R5JTIwbGlnaHRpbmd8ZW58MHx8fHwxNzg2OTg4ODIwfDA&ixlib=rb-4.1.0&q=85&w=1600";
+
+const PREMIUM_CARPETS = [
+  {
+    title: "Kashmir Garden Medallion",
+    origin: "Kashmiri silk · Hand-knotted",
+    image: CARPET_IMAGE,
+  },
+  {
+    title: "Kashmir Chinar Court",
+    origin: "Kashmiri silk · Fine talim",
+    image:
+      "https://images.unsplash.com/photo-1588421874990-1fe162747f9b?crop=entropy&cs=srgb&fm=jpg&q=85&w=900",
+  },
+  {
+    title: "Kashmir Moonlit Paisley",
+    origin: "Kashmiri silk · Collector grade",
+    image: CARPET_IMAGE,
+  },
+  {
+    title: "Tabriz Heritage Reserve",
+    origin: "Irani wool and silk · Hand-knotted",
+    image:
+      "https://images.unsplash.com/photo-1693332559291-380f10cd2253?crop=entropy&cs=srgb&fm=jpg&q=85&w=900",
+  },
+  {
+    title: "Isfahan Pearl Garden",
+    origin: "Irani silk · Museum finish",
+    image:
+      "https://images.unsplash.com/photo-1588421874990-1fe162747f9b?crop=entropy&cs=srgb&fm=jpg&q=85&w=900",
+  },
+] as const;
 
 export function Carpets() {
   const sectionRef = useRef<HTMLElement>(null);
@@ -89,6 +120,46 @@ export function Carpets() {
               Chats open directly with {BUSINESS.proprietor} · {BUSINESS.responseTime}
             </CapsLabel>
           </Reveal>
+        </div>
+
+        <div className="mt-24 border-t border-border/60 pt-10 md:mt-32 md:pt-14">
+          <Reveal>
+            <CapsLabel className="text-gold">Premium Carpet Selection</CapsLabel>
+            <h3 className="mt-4 max-w-xl font-display text-3xl leading-tight text-foreground md:text-4xl">
+              Kashmiri and Irani carpets for rooms with a point of view.
+            </h3>
+          </Reveal>
+
+          <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-5">
+            {PREMIUM_CARPETS.map((carpet, index) => (
+              <Reveal key={carpet.title} delay={index * 0.08} className="h-full">
+                <a
+                  href={whatsappUrl(WA_MESSAGES.collection(carpet.title))}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group block h-full outline-none focus-visible:ring-2 focus-visible:ring-gold/60"
+                  aria-label={`Enquire about ${carpet.title} on WhatsApp`}
+                >
+                  <div className="aspect-[4/5] overflow-hidden bg-background/60">
+                    <img
+                      src={carpet.image}
+                      alt={`${carpet.title}, ${carpet.origin}`}
+                      width={900}
+                      height={1125}
+                      loading="lazy"
+                      className="size-full object-cover transition-transform duration-700 group-hover:scale-105"
+                    />
+                  </div>
+                  <h4 className="mt-5 font-display text-xl text-foreground transition-colors group-hover:text-gold-soft">
+                    {carpet.title}
+                  </h4>
+                  <p className="mt-2 text-xs uppercase tracking-[0.16em] text-foreground/55">
+                    {carpet.origin}
+                  </p>
+                </a>
+              </Reveal>
+            ))}
+          </div>
         </div>
       </div>
     </section>
